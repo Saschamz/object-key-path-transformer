@@ -5,7 +5,7 @@
 Transforms object keys to be strings correspending to their path.
 The operation is completely immutable even for nested objects.
 
-Meant to be used with `i18n-js` as a way to provide type-safing with live preview of translations.
+Meant to be used with `i18n-js` and `typescript` as a way to provide type-safing and autocompletion.
 
 ## EXAMPLE USAGE WITH i18N-JS
 
@@ -23,5 +23,5 @@ export const lang = transformKeys(en)
 
 i18n.translations = { en }
 
-i18n.t(lang.buttons.next) // actual value: "buttons.next" value when hovered: "Next"
+i18n.t(lang.buttons.next) // value: "buttons.next"
 ```
