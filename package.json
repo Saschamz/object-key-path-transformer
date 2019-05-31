@@ -1,0 +1,23 @@
+{
+  "name": "object-key-path-transformer",
+  "version": "1.0.0",
+  "description": "Transform object keys to corresponding path strings",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Saschamz/object-key-path-transformer.git"
+  },
+  "homepage": "https://github.com/Saschamz/object-key-path-transformer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "object",
+    "transform",
+    "path",
+    "keys"
+  ],
+  "author": "Sascha Ringström",
+  "license": "MIT"
+}
