@@ -1,6 +1,6 @@
 {
   "name": "object-key-path-transformer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform object keys to corresponding path strings",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,8 @@
     "object",
     "transform",
     "path",
-    "keys"
+    "keys",
+    "i18n-js"
   ],
   "author": "Sascha Ringström",
   "license": "MIT"
