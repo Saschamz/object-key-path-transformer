@@ -1,12 +1,15 @@
 type ObjInput = { [key: string]: any }
 
-function deepKeyTransformer(obj: ObjInput, parentKey?: string) {
+function deepKeyTransformer(obj: ObjInput, currentPath?: string) {
   for (let key in obj) {
+    const path = currentPath ? `${currentPath}.${key}` : key
+
     if (typeof obj[key] !== 'object') {
-      obj[key] = (parentKey ? `${parentKey}.` : '') + key
+      const keyName = (currentPath ? currentPath + '.' : '') + key
+      obj[key] = keyName
       continue
     }
-    deepKeyTransformer(obj[key], key)
+    deepKeyTransformer(obj[key], path)
   }
 }
 
